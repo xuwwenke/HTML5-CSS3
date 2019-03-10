@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .a{
+            height: 135px;
+            width: 450px;
+            margin-left:40px;
+        }
+        .b{
+            height: 115px;
+            width: 450px;
+            margin-left:40px;
+        }
+        legend{
+            color:red;
+            margin-left: 40px;
+        }
+        span{
+            color:red;
+            margin-left: 3px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <header style="margin-bottom:20px;font-size:35px;margin-left:40px;margin-top:15px;"><strong>毕业信息</strong></header>
+        <fieldset class="a">
+            <legend>
+                学生信息
+            </legend>
+            &nbsp&nbsp姓&nbsp名<input type="text"name="name1" autofocus="autofocus" required placeholder="请输入姓名" style="margin-top:10px;"><span>*</span>
+            <br/>
+            &nbsp&nbsp学&nbsp号<input type="text"name="name2"  required placeholder="请输入学号"><span>*</span>
+            <br/>
+            &nbsp&nbsp手&nbsp机<input type="tel"name="name3"  required placeholder="请输入手机号"><span>*</span>
+            <br/>
+            &nbsp&nbsp邮&nbsp箱<input type="email"name="name4"  required placeholder="请输入邮箱"><span>*</span>
+        </fieldset>
+        <br/>
+        <br/>
+        <fieldset class="b">
+            <legend>
+                录取信息
+            </legend>
+            &nbsp&nbsp录取学校<input type="search" name="seal" list="names" required style="margin-top:10px;"/>
+            <datalist id="names">
+                <option>河北师范大学</option>
+                <option>河北科技大学</option>
+                <option>河北大学</option>
+                <option>河北农业大学</option>
+                <option>河北医大</option>
+            </datalist>
+            <br/>
+            &nbsp&nbsp入学成绩<input type="number" required name="name"/>
+            <br/>
+            &nbsp&nbsp入学时间<input type="date" required name="datedemo" style="margin-top:3px;"/>
+        <br/>
+        <br/>
+        </fieldset>
+        <input type="submit" value="提交" style="margin-left: 40px;margin-top: 20px;"/>
+    </form>
+</body>
+</html>
